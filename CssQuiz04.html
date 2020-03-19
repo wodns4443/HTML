@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<style type="text/css">
+		#wrap{ display: flex; flex-flow:column; width: 40%; height: 500px;
+				margin: 0 auto; border:2px solid black; text-align: center;}
+		div{  }
+		.div01{ order:2; height:50%; display: flex; border:1px solid black; background: red; }
+		.a1 { order:1; width: 15%; border:1px solid black;}
+		.b1 { order:2; width: 60%; border:1px solid black; flex-flow:column; }
+		.a2 { order:1; width: 90%; height:30px; border:1px solid black; margin: 30px 0 0 12px; }
+		.b2 { order:2; width: 90%; height:30px; border:1px solid black; margin: 20px 0 0 12px; }
+		.c2 { order:3; width: 90%; height:30px; border:1px solid black; margin: 20px 0 0 12px; }
+		.c1 { order:3; width: 25%; border:1px solid black;} 
+		.div02{ order:3; height:25%; border:2px solid black; background: pink; }
+		.div03{ order:1; height:25%; border:2px solid black; background: red; }
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="div01">
+			<div class="a1" style="background-color: yellow;"><h3>nav</h3></div>
+			<div class="b1" style="background-color: green;">
+				<h3>section1</h3>
+				<div class="a2" style="background-color: skyblue;">header</div>
+				<div class="b2" style="background-color: yellow;">articel</div>
+				<div class="c2" style="background-color: pink;">footer</div>
+			</div>
+			<div class="c1" style="background-color: yellow;"><h3>aside</h3></div>
+		</div>
+		<div class="div02"><h3>< footer ></h3></div>
+		<div class="div03"><h1>< header ></h1></div>
+	</div>
+</body>
+</html>

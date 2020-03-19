@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+	<style type="text/css">
+		/*
+			*{ color:red; background-color: yellow; font-size:30px; } 
+			h1 {background-color: red;}
+			h2 {background-color: green;}
+			p{ background-color: gold;}
+		
+			.class1{color:blud; background-color: yellow;}
+			.class2{color:red; background-color: green;}
+			.class3{color:navy; background-color: aqua;}
+		*/
+			#id1{color:blud; background-color: yellow;}
+			#id2{color:red; background-color: green;}
+			p#id1{color:navy; background-color: aqua;}
+			a:link{ color:pink; text-decoration: none;}
+			a:visited{ color: red;}
+			a:hover{ text-decoration: overline; color:black;}
+			a:active{ background-color: yellow;}
+			
+			.div01{ width:200px; height: 100px; color: blue;
+					background-color: green; opacity: 0.9;}
+			.div01:hover{
+				width: 400px; height: 50px; color:red;
+				background-color: yellow; opacity: 0.5;
+				transition : all 1.5s linear 0.5s}
+			.div02 ul li{color:red; list-style: none; display: inline;
+						padding: 10px;}
+			.div02 .h2{background-color: purple;}
+			
+			.div03 { overflow:auto; background-color: blue; height: 100px;}
+			.div03 div{ background-color: red; width: 200px; height: 200px;}
+	</style>
+
+</head>
+<body>
+	<div class="div03">hello
+		<div>css</div>
+	</div>
+	<h1>다음 내용</h1>
+<hr>
+<h2 class="h2">후손 선택자</h2>
+	<div class="div02">
+		<h2 class="h2">후손 선택자</h2>
+		<ul>
+			<li>후손 선택자</li><li>후손 선택자</li>
+		</ul>
+	</div>
+<hr>
+	<h2>가상 선택자</h2>
+	<div class="div01">
+	가상 클래스를 이용한 애니메이션 효과<br>마우스가 위에 있으면 박스가 늘어나요
+	</div>
+<hr>
+	<p><a href="#">test</a> : 마우스 이벤트에 따른 링크변화</p>
+	<p><a href="#">test</a> : 마우스 이벤트에 따른 링크변화</p>
+	link : 웹 문서에서 사용자가 방문하지 않았던 곳을 표시한다<br>
+	visited : 웹 문서에서 사용자가 방문한 곳을 표시한다.<br>
+	hover : 웹 문서에서 사용자가 링크에 마우스 포인터를 올리는 순간을 나타낸다.<br>
+	active : 웹 문서에서 사용자가 링크를 클릭하는 순간을 나타낸다.<br>
+<hr>
+	<h1 id="id1">전체 스타일 적용</h1>
+	<h2 id="id2">전체 스타일 적용</h2>
+	<p id="id1">전체 스타일 적용</p>
+<hr>
+	<h1 style="background-color: pink; color:blue;">전체 스타일 적용</h1>
+	<h1 class="class1">전체 스타일 적용</h1>
+	<h2 class="class2">전체 스타일 적용</h2>
+	<p class="class3">전체 스타일 적용</p>
+
+</body>
+</html>

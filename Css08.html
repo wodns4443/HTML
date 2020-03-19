@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.div { border: 3px solid blue; width: 500px; margin: 0 auto; }
+	.fix { overflow: auto; }
+	.header { border: 3px solid pink; }
+	.nav { float: left; width: 170px; height: 185px;
+			border: 3px solid gold; }
+	.section { margin: 0 0 0 177px; width: 315px;
+			border: 3px solid red; }
+	.footer { height: 20px; border: 3px solid skyblue; }
+
+	*{box-sizeing: border-box;}
+	div{margin: 10px; width: 150px;}
+	#default{ border: 1px solid black;}
+	#small{ border: 10px solid black;}
+	#large{ border: 30px solid black;}
+   </style>
+</head>
+<body>
+	<div id="small">Hello</div>
+	<div id="large">Hello</div>
+	<div id="default">Hello</div>
+<hr>
+	<div class="div fix">
+		<header class="header"><h1>제 목</h1></header>
+		<nav class="nav">
+			<span>목차(nav)</span>
+				<ul>
+					<li><a href="#">Google</a></li>
+					<li><a href="#">Apple</a></li>
+					<li><a href="#">W3C</a></li>
+				</ul>
+		</nav>
+		<section class="section">
+			<span>section 1</span><p>float 속성은 시맨틱 문서 구조에 유용하게 사용할 수 있습니다</p>
+		</section>      
+		<section class="section">
+			<span>section 2</span><p>float 속성은 시맨틱 문서 구조에 유용하게 사용할 수 있습니다</p>
+		</section>
+			<footer class="footer">   마지막 글</footer>
+	</div>
+
+</body>
+</html>

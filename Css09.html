@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<style type="text/css">
+		#wrap{ display: flex; flex-flow:column; width: 90%; height: 200px;
+				margin: 0 auto; border:4px solid black; text-align: center;}
+		div{ width: 33.33% }
+		.div01{ order:2; height:70px; display: flex; background: red; }
+		.a { order:1;}
+		.b { order:2;}
+		.c { order:3;}
+		.div02{ order:3; background: green; }
+		.div03{ order:1; background: aqua; }
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="div01">
+			<div class="a" style="background-color: yellow;">1</div>
+			<div class="b" style="background-color: gray;">2</div>
+			<div class="c" style="background-color: orange;">3</div>
+		</div>
+		<div class="div02"><h1>2</h1></div>
+		<div class="div03"><h1>3</h1></div>
+	</div>
+</body>
+</html>

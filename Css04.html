@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link type="text/css" rel="stylesheet" href="test.css"></link>
+<style type="text/css">
+	p{ background-color: red; }
+	.div01{ background-color: yellow; width: 300px; padding: 25px;
+			border: 15px solid navy; margin: 50px 20px 20px 0px; }
+	p.c{ background-color: yellow; color:red;
+			font-weight: bold; font-size: 16pt;}
+	p.c1{ width: 700px; height: 80px; color: green; }
+	p.c2{ width: 50%; height: 30%; color: purple; }
+	p.c3{ width: 10cm; height: 3cm; color: blue; }
+	
+	h3.none{ font-family: consolas;}
+	h3.hidden{ border-style: hidden;}
+	h3.dotted{ border-style: dotted;}
+	h3.double{ border-style: double;}
+</style>
+</head>
+<body>
+	<h3 class="none"> none </h3>
+	<h3 class="hidden"> hidden </h3>
+	<h3 class="dotted"> dotted </h3>
+	<h3 class="double"> double </h3>
+<hr>
+	<p class="c">박스 모델의 내용 영역 크기 지정</p>
+	<p class="c1 c">(1) c1:박스 모델의 크기를 픽셀(px) 단위로 지정</p>
+	<p class="c2 c">(2) c2:박스 모델의 크기를 퍼센트(%) 단위로 지정</p>
+	<p class="c3 c">(3) c3:박스 모델의 크기를 센티미터(cm) 단위로 지정</p>
+	<div style="width: 50%; height: 200px; background-color: red;">
+		<p class="c2 c">(2):박스 모델의 크기를 퍼센트(%) 단위로지정</p>
+	</div>
+<hr>
+	<div class="div01">css 박스 모델</div>
+<hr>
+	<p style="background-color: blue;">내부 스타일 시트</p>
+	<p>외부 스타일 시트</p>
+	<h3 class="class1"> 외부 스타일 시트</h3>
+	<h3 id="id01">외부 스타일 시트</h3>
+</body>
+</html>

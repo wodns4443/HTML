@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<style type="text/css">
+		#wrap{ display: flex; flex-flow:column; width: 40%; height: 600px;
+				margin: 0 auto; border:2px solid black; text-align: center;}
+		.div01{ order:1; height:20%; background: red; }
+		.div02{ order:2; height:15%; background: yellow; }
+		.div03{ order:2; height:50%; display: flex;}
+		.a { order:1; width: 70%; background: green;}
+		.b { order:2; width: 30%; background: skyblue;}
+		.c1 { order:1; width: 90%; height:30px; border:2px solid black;
+				margin: 20px 0 0 12px; background: pink}
+		.c2 { order:2; width: 90%; height:30px; border:2px solid black;
+				margin: 20px 0 0 12px; background: pink}
+		.c3 { order:3; width: 90%; height:30px; border:2px solid black;
+				margin: 20px 0 0 12px; background: pink}
+		.div04{ order:3; height:15%; background: pink; }
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="div01"><h1> < header > </h1> </div>
+		
+		<div class="div02"> <h3> < nav ></h3> </div>
+		
+		<div class="div03">
+			<div class="a">
+				<h3> < section1 ></h3>
+				<div class="c1"> < header > </div>
+				<div class="c2"> < article > </div>
+				<div class="c3"> < footer > </div>
+		</div>
+			
+			<div class="b"><h3> < aside ></h3></div>
+		</div>
+		
+		
+		<div class="div04"><h3>< footer ></h3></div>
+	</div>
+
+</body>
+</html>
